@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bybit Login Form</title>
+
+  <!-- Boxicons CDN -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #000; /* Black background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-container {
+      background: #111;
+      padding: 30px 40px;
+      border-radius: 25px;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+      text-align: center;
+      width: 200px;
+      color: white;
+    }
+
+    .login-container h1 {
+      font-size: 28px;
+      color: #FFD700; /* Gold color for Bybit */
+      margin-bottom: 100px;
+    }
+
+    .login-container h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .input-box {
+      margin-bottom: 15px;
+      position: relative;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 10px 35px 10px 40px;
+      border-radius: 10px;
+      border: 1px solid #555;
+      background: #222;
+      color: white;
+      outline: none;
+      font-size: 16px;
+    }
+
+    .input-box i {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      transform: translateY(-50%);
+      color: #ffc800ed;
+      font-size: 20px;
+      animation: bounce 1s infinite alternate;
+    }
+
+    @keyframes bounce {
+      from { transform: translateY(-50%) scale(1); }
+      to { transform: translateY(-60%) scale(1.1); }
+    }
+
+    .forgot-password {
+      display: block;
+      text-align: right;
+      font-size: 12px;
+      margin-bottom: 20px;
+      color: #fff200;
+      text-decoration: none;
+    }
+
+    .forgot-password:hover {
+      text-decoration: underline;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #00bfff;
+      color: black;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-btn:hover {
+      background: #fbe819;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Bybit</h1>
+    <h2>Login</h2>
+
+    <div class="input-box">
+      <i class='bx bx-user'></i>
+      <input type="text" placeholder="Username or Email">
+    </div>
+
+    <div class="input-box">
+      <i class='bx bx-lock-alt'></i>
+      <input type="password" placeholder="Password">
+    </div>
+
+    <a href="#" class="forgot-password">Forgot password?</a>
+    <button class="login-btn">Login</button>
+  </div>
+</body>
+</html>
